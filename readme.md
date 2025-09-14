@@ -1,7 +1,6 @@
 # Reaction Time Test on STM32F429
 
 ![Project Image](docs/project_overview.png)  
-*▲ 프로젝트 전반 구조 또는 동작 화면을 넣을 공간*
 
 ---
 
