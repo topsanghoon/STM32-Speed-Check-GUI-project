@@ -1,0 +1,128 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Main",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_gradient_dark.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "touchgfxLogo",
+            "X": 20,
+            "Y": 135,
+            "Width": 200,
+            "Height": 51,
+            "RelativeFilename": "TGFX_shadow_logo.png",
+            "Moveable": true
+          },
+          {
+            "Type": "Button",
+            "Name": "gotoMenuButton",
+            "X": 250,
+            "Y": 186,
+            "Width": 55,
+            "Height": 42,
+            "Pressed": "gotoMenu.png",
+            "Released": "gotoMenu.png",
+            "Alpha": 96
+          },
+          {
+            "Type": "TextArea",
+            "Name": "headline1",
+            "X": 18,
+            "Y": 93,
+            "Width": 205,
+            "Height": 28,
+            "TextId": "__SingleUse_GKCD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 0,
+            "AutoSize": true,
+            "Fadeable": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GotoMenuSelected",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "gotoMenuButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "gotoMenuSelected"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "touchgfx-template_f429i_horizontal",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Main",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_E01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Vector"
+    ]
+  },
+  "Version": "4.22.1",
+  "CreatedBy": "4.22.1"
+}

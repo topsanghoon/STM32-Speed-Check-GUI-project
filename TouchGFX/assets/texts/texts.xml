@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.22.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="REACTION_RESULT" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;*&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_8LJ1" Alignment="Center" TypographyId="labels">
+        <Translation Language="GB">back</Translation>
+      </Text>
+      <Text Id="__SingleUse_08Y9" Alignment="Right" TypographyId="labels">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LMJK" Alignment="Left" TypographyId="labels">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="T_REACTION_TIME" Alignment="Center" TypographyId="labels">
+        <Translation Language="GB">New Text&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_D7WQ" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_EK8N" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Reaction Speed Test</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="labels" Font="NotoSans-Regular.ttf" Size="12" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="-., 0123456789" />
+    <Typography Id="Typography_00" Font="verdana.ttf" Size="30" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>
